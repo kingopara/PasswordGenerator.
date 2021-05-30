@@ -1,20 +1,21 @@
 // Assignment code here
+var generateBtn = document.querySelector("#generate");
 
 // arrays with all characters
-var upperCase = ["ABCDEFGHIJKLMNOPQRSTUVWXYZ"];
-var lowerCase = ["abcdefghijklmnopqrstuvwxyz"];
-var numbers = ["1234567890"];
-var randomCharacter = ["~<>';:}{][+=_-)(*&^%$#@!"];
+    var upperCase = ["ABCDEFGHIJKLMNOPQRSTUVWXYZ"];
+    var lowerCase = ["abcdefghijklmnopqrstuvwxyz"];
+    var numbers = ["1234567890"];
+    var randomCharacter = ["~<>';:}{][+=_-)(*&^%$#@!"];
 
-var confirmCharacter = "";
-var confirmUpperCase;
-var confirmLowerCase;
-var confirmNumbers;
-var confirmRandomCharacter;
+    var confirmCharacter = "";
+    var confirmUpperCase;
+    var confirmLowerCase;
+    var confirmNumbers;
+    var confirmRandomCharacter;
 
 function generatePassword() {
   var confirmCharacter = window.prompt("How long would you like your password? Must be between 8-128 characters");
-    for ( var i = 128; i < confirmCharacter;){
+    for ( var i = 128; i < confirmCharacter;) {
       window.alert("password must be between 8-128 characters!");
       return;
     }
@@ -43,10 +44,15 @@ function generatePassword() {
   if (confirmRandomCharacter) {
     passwordCharacter = passwordCharacter.concat(randomCharacter)
   }
-}
 
+  var randomness = "";
+  for (var i = 0; i < confirmCharacter; i++) {
+    randomness = randomness + passwordCharacter[Math.floor(Math.random() * passwordCharacter.length)];
+  }
+  return randomness;
+}
 // Get references to the #generate element
-var generateBtn = document.querySelector("#generate");
+
 
 // Write password to the #password input
 function writePassword() {
