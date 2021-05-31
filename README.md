@@ -1,7 +1,7 @@
 # PasswordGenerator.
 
 ## Purpose
-This generates random passwords to for secure access to sensitive data.
+This generates random passwords for secure access to sensitive data.
 
 ## Built With
 * HTML
