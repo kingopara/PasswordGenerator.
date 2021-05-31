@@ -46,10 +46,10 @@ function generatePassword() {
   }
 
   var randomness = "";
-  for (var i = 0; i < confirmCharacter; i++) {
-    randomness = randomness + passwordCharacter[Math.floor(Math.random() * passwordCharacter.length)];
-  }
-  return randomness;
+    for (var i = 0; i < confirmCharacter; i++) {
+        randomness = randomness + passwordCharacter[Math.floor(Math.random() * passwordCharacter.length)];
+    }
+    return randomness;
 }
 // Get references to the #generate element
 
