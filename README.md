@@ -1,9 +1,59 @@
 # PasswordGenerator.
 
-## Purpose
-This generates random passwords for secure access to sensitive data.
+## Description
+AS AN employee with access to sensitive data
 
-## Built With
+I WANT to randomly generate a password that meets certain criteria
+
+SO THAT I can create a strong password that provides greater security
+
+# Website
+
+https://kingopara.github.io/PasswordGenerator./
+
+## Table of content
+* [Description](#description)
+* [Website](#website)
+* [Project Requirements](#usage)
+* [Build](#build)
+* [Preview](#preview)
+* [Installation](#installation)
+* [Credits](#credits)
+* [License](#license)
+* [Badges](#Badges)
+* [Contributing](#contributing)
+
+## Project Requirements and Usage
+
+* WHEN I click the button to generate a password
+
+    `THEN I am presented with a series of prompts for password criteria`
+
+* WHEN prompted for password criteria
+    
+    `THEN I select which criteria to include in the password`
+
+* WHEN prompted for the length of the password
+
+    `THEN I choose a length of at least 8 characters and no more than 128 characters`
+
+* WHEN asked for character types to include in the password
+
+    `THEN I confirm whether or not to include lowercase, uppercase, numeric, and/or special characters`
+
+* WHEN I answer each prompt
+
+    `THEN my input should be validated and at least one character type should be selected`
+
+* WHEN all prompts are answered
+
+    `THEN a password is generated that matches the selected criteria`
+
+* WHEN the password is generated
+
+    `THEN the password is either displayed in an alert or written to the page`
+
+## Build
 * HTML
 * CSS
 * JavaScript
@@ -11,8 +61,9 @@ This generates random passwords for secure access to sensitive data.
 ## Preview
 ![preview](images/preview.png)
 
-# Website
-https://kingopara.github.io/PasswordGenerator./
+## Installation
+
+clone the application onto your system from https://kingopara.github.io/PasswordGenerator./
 
 # Credit
 UT Austin Coding Bootcamp
@@ -20,10 +71,14 @@ UT Austin Coding Bootcamp
 ## Contributions
 Made with ❤️ by Praise Opara
 
-### praise opara
-
 ## License
+
 [MIT](https://choosealicense.com/licenses/mit/)
 
 ## Badges 
+
 ![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
+
+## Contributing
+
+![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.0-4baaaa.svg)
